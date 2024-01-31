@@ -1,0 +1,247 @@
+body {
+  background-color: #232830;
+  color: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 10px 100px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-menu p {
+  font-size: 30px;
+  line-height: 45px;
+  margin: 10px 0px;
+  font-weight: 400;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  padding: 0 10px;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-content h1 {
+  font-size: 71px;
+  color: #ff7575;
+  font-style: italic;
+  font-weight: 400;
+  margin: 0;
+  line-height: 85.2px;
+}
+
+.header-content p {
+  font-size: 29px;
+  margin: 0;
+  font-weight: 400;
+  line-height: 43.5px;
+  color: #fff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 50px;
+  border-top: 3px solid rgba(77, 77, 77, 0.2);
+  margin-left: -100px;
+  margin-right: -100px;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+.info-container .skill-list li {
+  font-size: 27px;
+  line-height: 32.4px;
+  font-weight: 400;
+  font-style: italic;
+  color: #909090;
+}
+
+.info-container .skill-list .gradient-effect {
+  background: linear-gradient(
+    270deg,
+    #232830 0.01%,
+    rgba(35, 40, 48, 0) 87.5%
+  ); /* Check why it is not applying */
+}
+
+.blog-container {
+  height: 100%;
+  width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  width: 390px;
+  height: 439px;
+  max-width: 390px;
+  max-height: 439px;
+  border: 1px solid #252930;
+  border-radius: 22px;
+  background-color: #fff;
+  margin: 0;
+  position: relative;
+}
+
+.blog-card .img-container {
+  margin-top: 25px;
+}
+
+.blog-card .blog-center {
+  display: flex;
+  flex-direction: column;
+  color: #0f1217;
+  margin: 0px 25px;
+}
+
+.blog-card .blog-center h4 {
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 28.5px;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.blog-card .blog-center p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  margin-top: 15px;
+}
+
+.blog-card .blog-bottom {
+  position: absolute;
+  bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  color: #0f1217;
+  margin: 0;
+  margin-left: -150px;
+}
+
+.blog-card .blog-bottom p {
+  display: inline;
+  padding: 0 10px;
+  margin: 0;
+}
+
+.blog-card .blog-bottom .ellipse-container {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.pagination span {
+  color: #909090;
+  font-weight: 400;
+  font-size: 25px;
+  font-style: italic;
+  padding-top: 5px;
+}
+
+.pagination span.active {
+  font-weight: 700;
+  color: #ff7575;
+  border-top: 3px solid #ff7575;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 0px 140px;
+  margin-bottom: 50px;
+  border-top: 3px solid #4D4D4D;
+  padding-top: 20px;
+}
+
+footer .footer-content {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 900px;
+}
+
+footer .footer-content p {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37.71px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+footer .footer-content span {
+  background-color: #4699E0;
+  height: fit-content;
+  align-items: center;
+  margin: 0;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 23.88px;
+}
